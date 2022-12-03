@@ -1,0 +1,233 @@
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (master)
+$ git status
+warning: could not open directory '$Recycle.Bin/S-1-5-18/': Permission denied
+warning: could not open directory '$Recycle.Bin/S-1-5-21-1309635732-1452301937-3889424512-500/': Permission denied
+warning: could not open directory 'Config.Msi/': Permission denied
+warning: could not open directory 'Documents and Settings/': Permission denied
+warning: could not open directory 'MSOCache/': Permission denied
+warning: could not open directory 'PerfLogs/': Permission denied
+warning: could not open directory 'Recovery/': Permission denied
+warning: could not open directory 'System Volume Information/': Permission denied
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../../$Recycle.Bin/
+        ../../../BIOS/
+        ../../../BOOTNXT
+        ../../../BluePrism/
+        ../../../Boot/
+        ../../../DataGenie24/
+        ../../../DumpStack.log.tmp
+        ../../../Intel/
+        ../../../Program Files (x86)/
+        ../../../Program Files/
+        ../../../ProgramData/
+        ../../../SYNAPTICS.LOG
+        ../../../UserGuidePDF/
+        ../../
+        ../../../Windows.old/
+        ../../../Windows/
+        ../../../adobeTemp/
+        ../../../audio.log
+        ../../../bootTel.dat
+        ../../../bootmgr
+        ../../../drivers/
+        ../../../hiberfil.sys
+        ../../../pagefile.sys
+        ../../../software/
+        ../../../swapfile.sys
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (master)
+$ git init
+Initialized empty Git repository in C:/Users/Siva S/Javascript Projects/.git/
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.js
+        test1.html
+        test1_bkp.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (master)
+$ git add .
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (master)
+$ git commit -m "my first javascript exercise"
+[master (root-commit) c1238a9] my first javascript exercise
+ 3 files changed, 96 insertions(+)
+ create mode 100644 test.js
+ create mode 100644 test1.html
+ create mode 100644 test1_bkp.html
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (master)
+$ git remote add SivaJSrepo https://github.com/SivaGitRepo/SivaJS.git
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (master)
+$ git push SivaJSrepo
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.23 KiB | 420.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SivaGitRepo/SivaJS.git
+ * [new branch]      master -> master
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (master)
+$ git checkout -b task/SivaTesting_20221203
+Switched to a new branch 'task/SivaTesting_20221203'
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (task/SivaTesting_20221203)
+$ git status
+On branch task/SivaTesting_20221203
+nothing to commit, working tree clean
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (task/SivaTesting_20221203)
+$ git status
+On branch task/SivaTesting_20221203
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test1.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (task/SivaTesting_20221203)
+$ git add test1.html
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (task/SivaTesting_20221203)
+$ git commit -m "added h2 tag to test1.html file"
+[task/SivaTesting_20221203 bc6ceb8] added h2 tag to test1.html file
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (task/SivaTesting_20221203)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (task/SivaTesting_20221203)
+$ git remote add SivaJSrepo https://github.com/SivaGitRepo/SivaJS.git
+error: remote SivaJSrepo already exists.
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (task/SivaTesting_20221203)
+$ git push SivaJSrepo
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 389 bytes | 389.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'task/SivaTesting_20221203' on GitHub by visiting:
+remote:      https://github.com/SivaGitRepo/SivaJS/pull/new/task/SivaTesting_20221203
+remote:
+To https://github.com/SivaGitRepo/SivaJS.git
+ * [new branch]      task/SivaTesting_20221203 -> task/SivaTesting_20221203
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (task/SivaTesting_20221203)
+$ git status
+On branch task/SivaTesting_20221203
+nothing to commit, working tree clean
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (task/SivaTesting_20221203)
+$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (task/SivaTesting_20221203)
+$ git status
+On branch task/SivaTesting_20221203
+nothing to commit, working tree clean
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (task/SivaTesting_20221203)
+$ git checkout master
+Switched to branch 'master'
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (master)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=SivaJSrepo/<branch> master
+
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (master)
+$ git pull SivaJSrepo
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 659 bytes | 164.00 KiB/s, done.
+From https://github.com/SivaGitRepo/SivaJS
+   c1238a9..f00f4f0  master     -> SivaJSrepo/master
+You asked to pull from the remote 'SivaJSrepo', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (master)
+$ git pull SivaJSrepo master
+From https://github.com/SivaGitRepo/SivaJS
+ * branch            master     -> FETCH_HEAD
+Updating c1238a9..f00f4f0
+Fast-forward
+ test1.html | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Siva S@LAPTOP-IMNRM4BG MINGW64 ~/Javascript Projects (master)
+$

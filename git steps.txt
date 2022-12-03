@@ -1,0 +1,16 @@
+$ git init
+$ git add .
+$ git commit -m "my first javascript exercise"
+$ git push
+$ git remote add SivaJSrepo https://github.com/SivaGitRepo/SivaJS.git
+$ git push SivaJSrepo
+$ git checkout -b task/SivaTesting_20221203
+$ git add test1.html
+$ git commit -m "added h2 tag to test1.html file"
+$ git push SivaJSrepo
+$ git checkout main
+$ git status
+$ git checkout master
+$ git pull
+$ git pull SivaJSrepo
+$ git pull SivaJSrepo master
