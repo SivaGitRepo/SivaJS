@@ -1,3 +1,15 @@
+/*
+/ -------> 01---data type in javascript string, number, boolean, null, undefined
+/ -------> 02---displaying/printing to console, string functions (case, split, length, substring)
+/ -------> 03---object variable/literals, array of objects & arrays
+/ -------> 04---loops (while, for, variations of for, forEach, map, filter)
+/ -------> 05---conditional statements (if, ternary operator, switch)
+/ -------> 06---functions (normal functions, fat arrow functions, one-liner functions)
+/ -------> 07---OOPS concepts (constructors, prototype) --> ignore this and rather focus on classes
+/ -------> 08---OOPS concepts (classes) 
+/ -------> 08---working with DOM objects --> exercise continued in index.html / main.js
+*/
+
 const a = 5;
 const b=10;
 const c = null;
@@ -30,10 +42,61 @@ const todos = [
      isCompleted: false}
 ]
 
-//* -------> 07---OOPS concepts (constructor etc.)
+//* -------> 09---working with DOM objects
+
+/* -------> 08---OOPS concepts (classes) 
+class car {
+    constructor(maker, model, launchDate) {
+        this.maker = maker
+        this.model = model
+        this.launchDate = new Date(launchDate)
+    }
+
+    getLaunchYear() {
+        return this.launchDate.getFullYear()
+    }
+    getMakeAndModel() {
+        return `${this.maker} ${this.model}`    
+    }   
+}
+
+const car1 = new car ("alto", "maruti", "01-01-1990");
+const car2 = new car ("i20", "hyundai", "02-02-2001");
+
+console.log (car1);
+console.log (car2.getLaunchYear());
+console.log (car2.getMakeAndModel());
+
+*/
+
+/* -------> 07---OOPS concepts (constructors, prototype) --> ignore this and rather focus on classes
+function car (model, maker, launchDate) {
+    this.model = model
+    this.maker = maker
+    this.launchDate = new Date(launchDate)
+    this.launchYear = function () {
+        return this.launchDate.getFullYear()
+    }
+    this.makeAndModel = function () {
+        return `${this.maker} ${this.model}`
+    }
+    car.prototype.makeAndModel1 = function () {                     // using a prototype function, since this will not log it as a function when displaying the object
+        return `${this.maker} ${this.model}`                        // rather it will display the object first and then it will display the prototypes
+    }
+}
+
+car1 = new car ("alto", "maruti", "01-01-1990")
+car2 = new car ("i20", "hyundai", "02-02-2001")
+
+console.log (car1)
+console.log (car2.launchYear())
+console.log (car2.makeAndModel())
+console.log (car2.makeAndModel1())
+
+*/
 
 /* -------> 06---functions
-todos.forEach((todo) => console.log(todo.description))              // FatArrow simplifying ForEach usage, useful if you want a one-liner, may not be fasible for block
+todos.forEach((todo) => console.log(todo.description))              // FatArrow simplifying ForEach usage, useful if you want a one-liner, may not be feasible for block
 
 const addNumFatArrow3 = num1 => num1 + 5                            // Function with fat arrow written as one line & with single parm. To pass default values use ()
 
