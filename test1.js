@@ -7,7 +7,7 @@
 / -------> 06---functions (normal functions, fat arrow functions, one-liner functions)
 / -------> 07---OOPS concepts (constructors, prototype) --> ignore this and rather focus on classes
 / -------> 08---OOPS concepts (classes) 
-/ -------> 08---working with DOM objects --> exercise continued in index.html / main.js
+/ -------> 08---working with DOM objects --> exercise continued in test2.html / test2.js
 */
 
 const a = 5;
