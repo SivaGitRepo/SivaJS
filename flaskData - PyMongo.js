@@ -34,8 +34,9 @@ button.onclick= function(){
       }).then(jsonResponse=>{
         
 // Iterate through the data with Map and write your rendering logic
+//        [jsonResponse].map(Main=> 
         jsonResponse.map(Main=> 
-   Main.lang==="Finnish"? data.innerHTML +="<p>"+ Main.lang+" "+" is a super-hard language to learn":
-   data.innerHTML +="<p>"+ Main.lang+" "+"is a hard language to learn" ) 
+   Main._id==="Energy"? data.innerHTML +="<p>"+ Main._id+" "+" is a super-domain to invest":
+   data.innerHTML +="<p>"+ Main._id+" "+"is a good domain to invest" ) 
 } 
 ).catch((err) => console.error(err)); } 

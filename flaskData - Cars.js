@@ -3,12 +3,11 @@ const button = document.getElementById("theButton")
 const data = document.getElementById("info")
 
 // Create an array of cars to send to the server
-
-const languages = [
-      { "lang":"Swedish", "origin":"Sweden" },
-      { "lang":"Tamil", "origin":"India" },
-      { "lang":"Finnish","origin": "Finland" }
-     ];
+const cars = [
+ { "make":"Porsche", "model":"911S" },
+ { "make":"Mercedes-Benz", "model":"220SE" },
+ { "make":"Jaguar","model": "Mark VII" }
+];
 
 // Create an event listener on the button element
 button.onclick= function(){
@@ -25,7 +24,7 @@ button.onclick= function(){
         'Origin': 'http://127.0.0.1:5000/receiver'
       },
 // Strigify the payload into JSON
-    body:JSON.stringify(languages)}).then(res=>{
+    body:JSON.stringify(cars)}).then(res=>{
         if(res.ok){
           return res.json()
         }else{
@@ -35,7 +34,7 @@ button.onclick= function(){
         
 // Iterate through the data with Map and write your rendering logic
         jsonResponse.map(Main=> 
-   Main.lang==="Finnish"? data.innerHTML +="<p>"+ Main.lang+" "+" is a super-hard language to learn":
-   data.innerHTML +="<p>"+ Main.lang+" "+"is a hard language to learn" ) 
+   Main.make==="Porsche"? data.innerHTML +="<p>"+ Main.make+" "+" is a good product":
+   data.innerHTML +="<p>"+ Main.make+" "+"is an average product" ) 
 } 
 ).catch((err) => console.error(err)); } 
