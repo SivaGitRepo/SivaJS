@@ -2,6 +2,8 @@
 const button = document.getElementById("theButton")
 const data = document.getElementById("info")
 
+const inputData = { "PEfrom":1.0, "PEto":5.0, "PBfrom":1.0, "PBto":7.0 , "TurnoverCrores": 0};
+
 // Create an event listener on the button element
 button.onclick= function(){
 
@@ -16,7 +18,7 @@ button.onclick= function(){
             'Origin': 'http://127.0.0.1:5000/receiver'
           },
     // Strigify the payload into JSON
-        body:JSON.stringify(null)})
+        body:JSON.stringify(inputData)})
     .then(function (response) {
         return response.json()
     }).then(function (text) {
